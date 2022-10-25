@@ -1,0 +1,217 @@
+a {
+    color: red;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu ul {
+    display: flex;
+
+}
+
+.menu ul li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+
+.menu ul li a:hover {
+    color: blue;
+}
+
+.menu2 {
+    display: flex;
+    align-content: center;
+}
+
+.menu3 {
+    display: flex;
+    align-content: right;
+}
+
+.menu {
+    font-family: monospace;
+}
+
+.menu2 {
+    font-family: monospace;
+}
+
+.menu3 {
+    font-family: monospace;
+}
+
+.global-header {
+    min-height: 600px;
+    background-image: url("Assets/BGImages/head_sandwichman.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.slideshow {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #999;
+    background: url(back) 0 0 no-repeat,
+        url(back2) 600px 0 no-repeat,
+        url(back3) 1200px 0 no-repeat,
+        url(back4) 1800px 0 no-repeat;
+    animation: slide-right 15s forwards 1s;
+}
+
+.menu form action {
+    display: flex;
+    align-content: center;
+}
+
+
+
+.slideshow {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img {
+    position: absolute;
+    max-width: 90vw;
+    max-height: 80vh;
+    opacity: 0;
+    animation: slideshow 36s ease-in-out infinite;
+}
+
+
+@keyframes slideshow {
+    from {
+        opacity: 0;
+        filter: grayscale(100%);
+    }
+
+    5% {
+        opacity: 1;
+        filter: grayscale(50%);
+    }
+
+    10% {
+        opacity: 1;
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+
+    15% {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    20% {
+        opacity: 0;
+        filter: blur(2px);
+        transform: scale(0.9);
+    }
+
+    25% {
+        opacity: 0;
+    }
+}
+
+
+
+.slideshow .i_1 {
+    animation-delay: 6s;
+    transform: translateX(-100px) rotate(-3deg);
+}
+
+.slideshow .i_2 {
+    animation-delay: 12s;
+    transform: translateX(100px) rotate(3deg);
+}
+
+.slideshow .i_3 {
+    animation-delay: 18s;
+    transform: translateY(-100px) rotate(3deg);
+}
+
+.slideshow .i_4 {
+    animation-delay: 24s;
+    transform: translateY(100px) rotate(-3deg);
+}
+
+.slideshow .i_5 {
+    animation-delay: 30s;
+    transform: rotate(-6deg);
+}
+
+.slideshow .i_6 {
+    animation-delay: 36s;
+    transform: rotate(6deg);
+}
+
+
+
+
+p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #e4e4e4;
+    text-shadow: 0 0 1px #000;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    opacity: 0;
+    animation: title 36s linear infinite;
+}
+
+
+@keyframes title {
+    from {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+}
+
+
+
+.slideshow .p_1 {
+    animation-delay: 7s;
+}
+
+.slideshow .p_2 {
+    animation-delay: 13s;
+}
+
+.slideshow .p_3 {
+    animation-delay: 19s;
+}
+
+.slideshow .p_4 {
+    animation-delay: 25s;
+}
+
+.slideshow .p_5 {
+    animation-delay: 31s;
+}
+
+.slideshow .p_6 {
+    animation-delay: 37s;
+}
